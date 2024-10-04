@@ -13,7 +13,7 @@ module.exports = {
       },
       boxShadow: {
         custom:
-          "0px 16px 32px 0px var(--blackAlpha100), 0px 0px 6px 0px var(--blackAlpha50)",
+          "0px 16px 32px 0px rgba(0, 0, 0, 0.12), 0px 0px 6px 0px rgba(0, 0, 0, 0.06)",
       },
     },
   },
