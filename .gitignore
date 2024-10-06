@@ -18,3 +18,4 @@ next-env.d.ts
 
 # macOS DSStore
 .DS_Store
+*storybook.log
