@@ -31,7 +31,7 @@ const TodoListItem = React.memo(
           {isDone && <Image src={checkImg} alt="체크" width={20} height={20} />}
         </button>
         <span
-          className={`flex-1 leading-8 font-normal ${isDone ? "text-[#868686]" : "text-text-[#000000]"}`}
+          className={`flex-1 leading-8 font-normal ${isDone ? "text-[#868686]" : "text-[#000000]"}`}
         >
           {text}
         </span>
