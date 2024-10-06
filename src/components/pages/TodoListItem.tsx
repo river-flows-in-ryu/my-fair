@@ -26,8 +26,9 @@ const TodoListItem = React.memo(
         <button
           onClick={() => handleClickToggleIsDone(id)}
           className={`w-8 h-8 mr-4 flex items-center justify-center rounded-full ${isDone ? "bg-[#2182F3]" : "border border-[#E5E5E5]"}`}
+          data-testid={`toggle ${id}`}
         >
-          {isDone && <Image src={checkImg} alt="체크" />}
+          {isDone && <Image src={checkImg} alt="체크" width={20} height={20} />}
         </button>
         <span
           className={`flex-1 leading-8 font-normal ${isDone ? "text-[#868686]" : "text-text-[#000000]"}`}
@@ -38,7 +39,7 @@ const TodoListItem = React.memo(
           onClick={() => handleClickRemoveItem(id)}
           className="w-8 h-8 flex items-center justify-center"
         >
-          <Image alt="닫기버튼" src={closeImg} width={24} height={24} />
+          <Image alt="삭제버튼" src={closeImg} width={24} height={24} />
         </button>
       </li>
     );
