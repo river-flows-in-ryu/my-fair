@@ -7,7 +7,7 @@ interface Props {}
 
 const TodoUserListPage = ({}: Props) => {
   const initialToDoList = [
-    { id: 1, text: "출근하고 비타민 먹기", isDone: true },
+    { id: 1, text: "출근하고 비타민 먹기", isDone: false },
     { id: 2, text: "Daily Scrum 작성하기", isDone: false },
     { id: 3, text: "주간회의 참여하기", isDone: false },
   ];
